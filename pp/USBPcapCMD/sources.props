@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TARGETNAME Condition="'$(OVERRIDE_TARGETNAME)'!='true'">USBPcapCMD</TARGETNAME>
+    <TARGETTYPE Condition="'$(OVERRIDE_TARGETTYPE)'!='true'">PROGRAM</TARGETTYPE>
+    <_NT_TARGET_VERSION Condition="'$(OVERRIDE__NT_TARGET_VERSION)'!='true'">$(_NT_TARGET_VERSION_WINXP)</_NT_TARGET_VERSION>
+    <USE_MSVCRT Condition="'$(OVERRIDE_USE_MSVCRT)'!='true'">1</USE_MSVCRT>
+    <UMTYPE Condition="'$(OVERRIDE_UMTYPE)'!='true'">windows</UMTYPE>
+    <UMBASE Condition="'$(OVERRIDE_UMBASE)'!='true'">0x01000000</UMBASE>
+    <SXS_APPLICATION_MANIFEST Condition="'$(OVERRIDE_SXS_APPLICATION_MANIFEST)'!='true'">USBPcapCMD.manifest</SXS_APPLICATION_MANIFEST>
+    <SXS_ASSEMBLY_VERSION Condition="'$(OVERRIDE_SXS_ASSEMBLY_VERSION)'!='true'">1.0</SXS_ASSEMBLY_VERSION>
+    <SXS_ASSEMBLY_NAME Condition="'$(OVERRIDE_SXS_ASSEMBLY_NAME)'!='true'">USBPcapCMD</SXS_ASSEMBLY_NAME>
+    <SXS_ASSEMBLY_LANGUAGE Condition="'$(OVERRIDE_SXS_ASSEMBLY_LANGUAGE)'!='true'">0000</SXS_ASSEMBLY_LANGUAGE>
+    <INCLUDES Condition="'$(OVERRIDE_INCLUDES)'!='true'">$(DDK_INC_PATH);..\USBPcapDriver\include</INCLUDES>
+    <TARGETLIBS Condition="'$(OVERRIDE_TARGETLIBS)'!='true'">$(SDK_LIB_PATH)\hid.lib               $(SDK_LIB_PATH)\setupapi.lib               $(SDK_LIB_PATH)\comdlg32.lib               $(DDK_LIB_PATH)\advapi32.lib               $(DDK_LIB_PATH)\Cfgmgr32.lib               $(DDK_LIB_PATH)\Shell32.lib               $(DDK_LIB_PATH)\Shlwapi.lib</TARGETLIBS>
+    <SOURCES Condition="'$(OVERRIDE_SOURCES)'!='true'">USBPcapCMD.rc            cmd.c            descriptors.c            enum.c            filters.c            getopt.c            iocontrol.c            roothubs.c            thread.c</SOURCES>
+  </PropertyGroup>
+</Project>
