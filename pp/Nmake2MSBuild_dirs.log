@@ -1,0 +1,213 @@
+Convert:	Verbose  : 6/29/2020 3:21:22 PM
+Convert:	Information  : Converting all children of DIRS file C:\Users\fred\Desktop\usbpcap\dirs
+    ConvertFile:	Information  : Converting "C:\Users\fred\Desktop\usbpcap\USBPcapCMD\sources"
+        Parse  :	Verbose  : File contents after preprocessing:
+                            	TARGETNAME = USBPcapCMD
+                            	TARGETTYPE = PROGRAM
+                            	_NT_TARGET_VERSION = $(_NT_TARGET_VERSION_WINXP)
+                            	USE_MSVCRT = 1
+                            	UMTYPE = windows
+                            	UMBASE = 0x01000000
+                            	SXS_APPLICATION_MANIFEST=USBPcapCMD.manifest
+                            	SXS_ASSEMBLY_VERSION=1.0
+                            	SXS_ASSEMBLY_NAME=USBPcapCMD
+                            	SXS_ASSEMBLY_LANGUAGE=0000
+                            	INCLUDES = $(DDK_INC_PATH);..\USBPcapDriver\include
+                            	TARGETLIBS = $(SDK_LIB_PATH)\hid.lib               $(SDK_LIB_PATH)\setupapi.lib               $(SDK_LIB_PATH)\comdlg32.lib               $(DDK_LIB_PATH)\advapi32.lib               $(DDK_LIB_PATH)\Cfgmgr32.lib               $(DDK_LIB_PATH)\Shell32.lib               $(DDK_LIB_PATH)\Shlwapi.lib
+                            	SOURCES = USBPcapCMD.rc            cmd.c            descriptors.c            enum.c            filters.c            getopt.c            iocontrol.c            roothubs.c            thread.c
+            ParseIfApplies:	Verbose  : "TARGETNAME = USBPcapCMD" was parsed as a"MacroDefinition"
+            ParseIfApplies:	Verbose  : "TARGETTYPE = PROGRAM" was parsed as a"MacroDefinition"
+            ParseIfApplies:	Verbose  : "_NT_TARGET_VERSION = $(_NT_TARGET_VERSION_WINXP)" was parsed as a"MacroDefinition"
+            ParseIfApplies:	Verbose  : "USE_MSVCRT = 1" was parsed as a"MacroDefinition"
+            ParseIfApplies:	Verbose  : "UMTYPE = windows" was parsed as a"MacroDefinition"
+            ParseIfApplies:	Verbose  : "UMBASE = 0x01000000" was parsed as a"MacroDefinition"
+            ParseIfApplies:	Verbose  : "SXS_APPLICATION_MANIFEST=USBPcapCMD.manifest" was parsed as a"MacroDefinition"
+            ParseIfApplies:	Verbose  : "SXS_ASSEMBLY_VERSION=1.0" was parsed as a"MacroDefinition"
+            ParseIfApplies:	Verbose  : "SXS_ASSEMBLY_NAME=USBPcapCMD" was parsed as a"MacroDefinition"
+            ParseIfApplies:	Verbose  : "SXS_ASSEMBLY_LANGUAGE=0000" was parsed as a"MacroDefinition"
+            ParseIfApplies:	Verbose  : "INCLUDES = $(DDK_INC_PATH);..\USBPcapDriver\include" was parsed as a"MacroDefinition"
+            ParseIfApplies:	Verbose  : "TARGETLIBS = $(SDK_LIB_PATH)\hid.lib               $(SDK_LIB_PATH)\setupapi.lib               $(SDK_LIB_PATH)\comdlg32.lib               $(DDK_LIB_PATH)\advapi32.lib               $(DDK_LIB_PATH)\Cfgmgr32.lib               $(DDK_LIB_PATH)\Shell32.lib               $(DDK_LIB_PATH)\Shlwapi.lib" was parsed as a"MacroDefinition"
+            ParseIfApplies:	Verbose  : "SOURCES = USBPcapCMD.rc            cmd.c            descriptors.c            enum.c            filters.c            getopt.c            iocontrol.c            roothubs.c            thread.c" was parsed as a"MacroDefinition"
+        GenerateMsBuildFile:	Information  : Generated file "C:\Users\fred\Desktop\usbpcap\USBPcapCMD\sources.props"
+            IsPropertyElementSetConditionally:	Verbose  : Property DriverType is set conditionally. Immediate condition ="'$(PlatformToolset)'=='WindowsApplicationForDrivers8.1'". Conditional parent element = Microsoft.Build.Construction.ProjectPropertyGroupElement
+        PostProcessing                       :	Verbose  : Extracted property "PlatformToolset" with a value of "WindowsApplicationForDrivers8.1" from sources.
+        PostProcessing                       :	Verbose  : Extracted property "ConfigurationType" with a value of "Application" from sources.
+        PostProcessing                       :	Verbose  : Extracted property "DriverType" with a value of "" from sources.
+        PostProcessing                       :	Verbose  : Extracted property "TARGETNAME" with a value of "USBPcapCMD" from sources.
+        PostProcessing                       :	Verbose  : VcxProj file copied to "USBPcapCMD.vcxproj"
+        PostProcessing                       :	Verbose  : Added Project GUID: {B28BC6E7-7A34-4C89-83DE-C8AFAF5DAC5D}
+        PostProcessing                       :	Information  : Generated Project File USBPcapCMD.vcxproj
+        AddIDESupport                        :	Verbose  : Attempting to add propery page support for converted targets and macros in project C:\Users\fred\Desktop\usbpcap\USBPcapCMD\USBPcapCMD.vcxproj
+            CheckForWellKnownTargets         :	Verbose  : Attempting to find and convert nmake targets to well-known MSBuild items, as appropriate.
+            CheckForWellKnownTargetMacros:	Verbose  : Attempting to find and convert nmake target macros to well-known MSBuild items, as appropriate.
+        AddIDESupport                    :	Verbose  : Finished adding propery page support for converted targets and macros, changes saved to C:\Users\fred\Desktop\usbpcap\USBPcapCMD\USBPcapCMD.vcxproj
+        AddOverrideConditionsToProperies :	Verbose  : Appended override conditions to properties in file 'C:\Users\fred\Desktop\usbpcap\USBPcapCMD\sources.props' and its imports
+GetDependencyInformation                 :	Information  : Checking for external project dependencies
+GetDependencyInformation                 :	Verbose  : Processing the following list of primary projects
+                                                      	C:\Users\fred\Desktop\usbpcap\USBPcapCMD\USBPcapCMD.vcxproj
+    AddPrerequisitesToSolution           :	Verbose  : Finding prerequisites for C:\Users\fred\Desktop\usbpcap\USBPcapCMD\USBPcapCMD.vcxproj
+        GetPrerequisiteProjects          :	Verbose  : Scanning for prerequisites for project C:\Users\fred\Desktop\usbpcap\USBPcapCMD\USBPcapCMD.vcxproj
+        EvaluateProject                  :	Verbose  : $(O) set to c79c4e0d-1943-4a33-9fa2-652fe763177a
+        ExtractIncludesFromItem          :	Verbose  : Extracting include elements from all items of type ClCompile
+        ExtractIncludesFromItem          :	Verbose  : Extracting include elements from all items of type MessageCompile
+        ExtractIncludesFromItem         :	Verbose  : Didn't find any items of type MessageCompile in project C:\Users\fred\Desktop\usbpcap\USBPcapCMD\USBPcapCMD.vcxproj
+        ExtractIncludesFromItem         :	Verbose  : Extracting include elements from all items of type Midl
+        ExtractIncludesFromItem:	Verbose  : Didn't find any items of type Midl in project C:\Users\fred\Desktop\usbpcap\USBPcapCMD\USBPcapCMD.vcxproj
+        ExtractIncludesFromItem:	Verbose  : Extracting include elements from all items of type ResourceCompile
+        ExtractIncludesFromItemMetadata:	Verbose  : Extracting include elements from metadata AdditionalDependencies on item type Link, using splitter ;
+        ExtractIncludesFromItemMetadata:	Verbose  : Extracting include elements from metadata AdditionalIncludeDirectories on item type ClCompile, using splitter ;
+            FindPreReqProjectsInReferences:	Verbose  : Ignoring following path since it references the project's own $(O) C:\Users\fred\Desktop\usbpcap\USBPcapCMD\c79c4e0d-1943-4a33-9fa2-652fe763177a
+        GetPrerequisiteProjects           :	Verbose  : No prerequisite projects found for project C:\Users\fred\Desktop\usbpcap\USBPcapCMD\USBPcapCMD.vcxproj
+    AddPrerequisitesToSolution            :	Verbose  : Project C:\Users\fred\Desktop\usbpcap\USBPcapCMD\USBPcapCMD.vcxproj had no prerequisites, adding to solution
+GetDependencyInformation                  :	Information  : The primary project collection does not contain any projects that depend on others.
+    ConvertFile                           :	Information  : Converting "C:\Users\fred\Desktop\usbpcap\USBPcapDriver\sources"
+        Parse                             :	Verbose  : File contents after preprocessing:
+                                                       	TARGETNAME = USBPcap
+                                                       	TARGETTYPE = DRIVER
+                                                       	DRIVERTYPE = WDM
+                                                       	INF_NAME=USBPcap
+                                                       	USBPCAP_VERSION=1.5.4.0
+                                                       	NTTARGETFILE2=$(OBJ_PATH)\$(O)\$(INF_NAME).inf
+                                                       	TARGETLIBS = $(DDK_LIB_PATH)\Wdm.lib               $(DDK_LIB_PATH)\Wdmsec.lib               $(DDK_LIB_PATH)\Ntstrsafe.lib               $(DDK_LIB_PATH)\Ntoskrnl.lib               $(DDK_LIB_PATH)\USBd.lib
+                                                       	C_DEFINES=$(C_DEFINES) -DPOOL_NX_OPTIN=1
+                                                       	INCLUDES = $(DDK_INC_PATH);             $(WDM_INC_PATH);
+                                                       	SOURCES = USBPcap.rc                          USBPcapBuffer.c                     USBPcapDeviceControl.c              USBPcapFilterManager.c              USBPcapGenReq.c                     USBPcapHelperFunctions.c            USBPcapMain.c                       USBPcapPnP.c                        USBPcapPower.c                      USBPcapRootHubControl.c             USBPcapQueue.c                      USBPcapTables.c                     USBPcapURB.c
+            ParseIfApplies                :	Verbose  : "TARGETNAME = USBPcap" was parsed as a"MacroDefinition"
+            ParseIfApplies                :	Verbose  : "TARGETTYPE = DRIVER" was parsed as a"MacroDefinition"
+            ParseIfApplies                :	Verbose  : "DRIVERTYPE = WDM" was parsed as a"MacroDefinition"
+            ParseIfApplies                :	Verbose  : "INF_NAME=USBPcap" was parsed as a"MacroDefinition"
+            ParseIfApplies     :	Verbose  : "USBPCAP_VERSION=1.5.4.0" was parsed as a"MacroDefinition"
+            ParseIfApplies    :	Verbose  : "NTTARGETFILE2=$(OBJ_PATH)\$(O)\$(INF_NAME).inf" was parsed as a"MacroDefinition"
+            ParseIfApplies:	Verbose  : "TARGETLIBS = $(DDK_LIB_PATH)\Wdm.lib               $(DDK_LIB_PATH)\Wdmsec.lib               $(DDK_LIB_PATH)\Ntstrsafe.lib               $(DDK_LIB_PATH)\Ntoskrnl.lib               $(DDK_LIB_PATH)\USBd.lib" was parsed as a"MacroDefinition"
+            ParseIfApplies:	Verbose  : "C_DEFINES=$(C_DEFINES) -DPOOL_NX_OPTIN=1" was parsed as a"MacroDefinition"
+            ParseIfApplies:	Verbose  : "INCLUDES = $(DDK_INC_PATH);             $(WDM_INC_PATH);" was parsed as a"MacroDefinition"
+            ParseIfApplies:	Verbose  : "SOURCES = USBPcap.rc                          USBPcapBuffer.c                     USBPcapDeviceControl.c              USBPcapFilterManager.c              USBPcapGenReq.c                     USBPcapHelperFunctions.c            USBPcapMain.c                       USBPcapPnP.c                        USBPcapPower.c                      USBPcapRootHubControl.c             USBPcapQueue.c                      USBPcapTables.c                     USBPcapURB.c" was parsed as a"MacroDefinition"
+        GenerateMsBuildFile:	Information  : Generated file "C:\Users\fred\Desktop\usbpcap\USBPcapDriver\sources.props"
+        ConvertFile        :	Information  : Converting "C:\Users\fred\Desktop\usbpcap\USBPcapDriver\makefile.inc"
+            Parse          :	Verbose  : File contents after preprocessing:
+                                        	_LNG=$(LANGUAGE)
+                                        	_INX=.
+                                        	STAMP=stampinf -f %24%40 -a $(_BUILDARCH) -v $(USBPCAP_VERSION)
+                                        	$(OBJ_PATH)\$(O)\$(INF_NAME).inf: $(_INX)\$(INF_NAME).inx
+                                        	    copy $(_INX)\%24%28%40B%29.inx %24%40
+                                        	    $(STAMP)
+                ParseIfApplies:	Verbose  : "_LNG=$(LANGUAGE)" was parsed as a"MacroDefinition"
+                ParseIfApplies:	Verbose  : "_INX=." was parsed as a"MacroDefinition"
+                ParseIfApplies:	Verbose  : "STAMP=stampinf -f %24%40 -a $(_BUILDARCH) -v $(USBPCAP_VERSION)" was parsed as a"MacroDefinition"
+                StartProcessingHeader:	Verbose  : "$(OBJ_PATH)\$(O)\$(INF_NAME).inf: $(_INX)\$(INF_NAME).inx" was parsed as start of directive type "TargetDefinition"
+                FinishProcesssing    :	Verbose  : Concluded parsing multi-line directive type "TargetDefinition" from definition:
+                                                  	 $(OBJ_PATH)\$(O)\$(INF_NAME).inf: $(_INX)\$(INF_NAME).inx
+                                                  	    copy $(_INX)\%24%28%40B%29.inx %24%40
+                                                  	    $(STAMP)
+                ConvertTarget        :	Verbose  : Set BeforeTargets="$(AfterBuildLinkTargets)" for target "Converted Target 0"
+                ConvertTarget        :	Verbose  : Set AfterTargets="$(BuildLinkTargets)" for target "Converted Target 0"
+                ConvertTarget        :	Verbose  : Generated MSBuildTarget "Converted Target 0" with inputs :
+                                                  	$(_INX)\$(INF_NAME).inx
+                                                  	
+                                                  	
+                ConvertTarget        :	Verbose  : Added commands to MSBuild Target "Converted Target 0" for output file "$(OBJ_PATH)\$(O)\$(INF_NAME).inf" with commands:
+                                                  	copy $(_INX)\%24%28%40B%29.inx %24%40
+                                                  	$(STAMP)
+            GenerateMsBuildFile      :	Information  : Generated file "C:\Users\fred\Desktop\usbpcap\USBPcapDriver\makefile.inc.props"
+            IsPropertyElementSetConditionally:	Verbose  : Property DriverType is set conditionally. Immediate condition ="'$(PlatformToolset)'=='WindowsApplicationForDrivers8.1'". Conditional parent element = Microsoft.Build.Construction.ProjectPropertyGroupElement
+        PostProcessing                       :	Verbose  : Extracted property "PlatformToolset" with a value of "WindowsKernelModeDriver8.1" from sources.
+        PostProcessing                       :	Verbose  : Extracted property "ConfigurationType" with a value of "Driver" from sources.
+        PostProcessing                       :	Verbose  : Extracted property "DriverType" with a value of "WDM" from sources.
+        PostProcessing                       :	Verbose  : Extracted property "TARGETNAME" with a value of "USBPcap" from sources.
+        PostProcessing                       :	Verbose  : VcxProj file copied to "USBPcap.vcxproj"
+        PostProcessing                       :	Verbose  : Added Project GUID: {AE7DA202-4E32-4C16-9DB9-D9BF0D10EA73}
+        PostProcessing                       :	Information  : Generated Project File USBPcap.vcxproj
+        AddIDESupport                        :	Verbose  : Attempting to add propery page support for converted targets and macros in project C:\Users\fred\Desktop\usbpcap\USBPcapDriver\USBPcap.vcxproj
+            CheckForWellKnownTargets         :	Verbose  : Attempting to find and convert nmake targets to well-known MSBuild items, as appropriate.
+            CheckForWellKnownTargets:	Verbose  : Target Command 1 = copy $(_INX)\%24%28%40B%29.inx %24%40
+                PartiallyEvaluate   :	Verbose  : Partially expanding "copy $(_INX)\%24%28%40B%29.inx %24%40"
+                PartiallyEvaluate   :	Verbose  : "copy $(_INX)\%24%28%40B%29.inx %24%40" partially expanded to "copy .\%24%28%40B%29.inx %24%40" 
+                ReplaceTargetCommandTokens:	Verbose  : After token replacement, "copy .\%24%28%40B%29.inx %24%40" was converted to "copy .\$(INF_NAME).inx "$(OBJ_PATH)\$(O)\$(INF_NAME).inf""
+            CheckForWellKnownTargets      :	Verbose  : Target Command 2 = $(STAMP)
+                PartiallyEvaluate         :	Verbose  : Partially expanding "$(STAMP)"
+                PartiallyEvaluate         :	Verbose  : "$(STAMP)" partially expanded to "stampinf -f %24%40 -a $(_BUILDARCH) -v 1.5.4.0" 
+                ReplaceTargetCommandTokens:	Verbose  : After token replacement, "stampinf -f %24%40 -a $(_BUILDARCH) -v 1.5.4.0" was converted to "stampinf -f "$(OBJ_PATH)\$(O)\$(INF_NAME).inf" -a $(_BUILDARCH) -v 1.5.4.0"
+            ConvertNmakeCommands          :	Verbose  : Target Input $(_INX)\$(INF_NAME).inx
+            ConvertNmakeCommands          :	Verbose  : Target Output $(OBJ_PATH)\$(O)\$(INF_NAME).inf
+            ConvertNmakeCommands          :	Verbose  : Successfully recognized the command: copy .\$(INF_NAME).inx "$(OBJ_PATH)\$(O)\$(INF_NAME).inf"
+            AddStampInfItem               :	Verbose  : Successfully added Inf item for : $(_INX)\$(INF_NAME).inx
+            ConvertNmakeCommands          :	Verbose  : Successfully recognized the command: stampinf -f "$(OBJ_PATH)\$(O)\$(INF_NAME).inf" -a $(_BUILDARCH) -v 1.5.4.0
+            CheckForWellKnownTargets      :	Verbose  : All commands in target Converted Target 0 are well known. Appropriate MSBuild wrapped tasks will be invoked instead. Target is being disabled by setting ConvertedTarget0_Disabled=true
+            CheckForWellKnownTargetMacros :	Verbose  : Attempting to find and convert nmake target macros to well-known MSBuild items, as appropriate.
+        AddIDESupport                     :	Verbose  : Finished adding propery page support for converted targets and macros, changes saved to C:\Users\fred\Desktop\usbpcap\USBPcapDriver\USBPcap.vcxproj
+        AddOverrideConditionsToProperies  :	Verbose  : Appended override conditions to properties in file 'C:\Users\fred\Desktop\usbpcap\USBPcapDriver\sources.props' and its imports
+        AddOverrideConditionsToProperies :	Verbose  : Appended override conditions to properties in file 'C:\Users\fred\Desktop\usbpcap\USBPcapDriver\makefile.inc.props' and its imports
+GetDependencyInformation                 :	Information  : Checking for external project dependencies
+GetDependencyInformation                 :	Verbose  : Processing the following list of primary projects
+                                                      	C:\Users\fred\Desktop\usbpcap\USBPcapDriver\USBPcap.vcxproj
+    AddPrerequisitesToSolution           :	Verbose  : Finding prerequisites for C:\Users\fred\Desktop\usbpcap\USBPcapDriver\USBPcap.vcxproj
+        GetPrerequisiteProjects          :	Verbose  : Scanning for prerequisites for project C:\Users\fred\Desktop\usbpcap\USBPcapDriver\USBPcap.vcxproj
+        EvaluateProject                  :	Verbose  : $(O) set to f59bdc7a-0e06-45d5-89d1-ddadf969e1cf
+        ExtractIncludesFromItem          :	Verbose  : Extracting include elements from all items of type ClCompile
+        ExtractIncludesFromItem         :	Verbose  : Extracting include elements from all items of type MessageCompile
+        ExtractIncludesFromItem         :	Verbose  : Didn't find any items of type MessageCompile in project C:\Users\fred\Desktop\usbpcap\USBPcapDriver\USBPcap.vcxproj
+        ExtractIncludesFromItem         :	Verbose  : Extracting include elements from all items of type Midl
+        ExtractIncludesFromItem:	Verbose  : Didn't find any items of type Midl in project C:\Users\fred\Desktop\usbpcap\USBPcapDriver\USBPcap.vcxproj
+        ExtractIncludesFromItem:	Verbose  : Extracting include elements from all items of type ResourceCompile
+        ExtractIncludesFromItemMetadata:	Verbose  : Extracting include elements from metadata AdditionalDependencies on item type Link, using splitter ;
+        ExtractIncludesFromItemMetadata:	Verbose  : Extracting include elements from metadata AdditionalIncludeDirectories on item type ClCompile, using splitter ;
+            FindPreReqProjectsInReferences:	Verbose  : Ignoring following path since it references the project's own $(O) C:\Users\fred\Desktop\usbpcap\USBPcapDriver\f59bdc7a-0e06-45d5-89d1-ddadf969e1cf
+        GetPrerequisiteProjects           :	Verbose  : No prerequisite projects found for project C:\Users\fred\Desktop\usbpcap\USBPcapDriver\USBPcap.vcxproj
+    AddPrerequisitesToSolution            :	Verbose  : Project C:\Users\fred\Desktop\usbpcap\USBPcapDriver\USBPcap.vcxproj had no prerequisites, adding to solution
+GetDependencyInformation                  :	Information  : The primary project collection does not contain any projects that depend on others.
+Convert                                   :	Information  : Processed 2 projects spanned by the specified dirs file. Attempting to generate corresponding project solutions
+    CreatePackage                         :	Verbose  : Checking if any of the following projects should be packaged
+                                                       	 C:\Users\fred\Desktop\usbpcap\USBPcapCMD\USBPcapCMD.vcxproj
+                                                       	C:\Users\fred\Desktop\usbpcap\USBPcapDriver\USBPcap.vcxproj
+    CreatePackage                         :	Verbose  : Project USBPcap.vcxproj will be packaged because it is a driver project
+    CreatePackage                         :	Verbose  : Generating package project
+    CreatePackage                         :	Verbose  : Adding reference to project ..\USBPcapDriver\USBPcap.vcxproj with project guid {AE7DA202-4E32-4C16-9DB9-D9BF0D10EA73}
+    CreatePackage                         :	Verbose  : Setting package project DebuggerFlavor to: DbgengKernelDebugger
+    CreatePackage              :	Information  : Generated Package Project file 'C:\Users\fred\Desktop\usbpcap\dirs-Package\dirs-Package.vcxproj'
+GetDependencyInformation      :	Information  : Checking for external project dependencies
+GetDependencyInformation:	Verbose  : Processing the following list of primary projects
+                                     	C:\Users\fred\Desktop\usbpcap\dirs-Package\dirs-Package.vcxproj
+                                     	C:\Users\fred\Desktop\usbpcap\USBPcapDriver\USBPcap.vcxproj
+                                     	C:\Users\fred\Desktop\usbpcap\USBPcapCMD\USBPcapCMD.vcxproj
+    AddPrerequisitesToSolution:	Verbose  : Finding prerequisites for C:\Users\fred\Desktop\usbpcap\dirs-Package\dirs-Package.vcxproj
+        GetPrerequisiteProjects:	Verbose  : Scanning for prerequisites for project C:\Users\fred\Desktop\usbpcap\dirs-Package\dirs-Package.vcxproj
+        EvaluateProject        :	Verbose  : $(O) set to 83126380-c824-4083-8ac8-5e5f111c6b76
+        ExtractIncludesFromItem:	Verbose  : Extracting include elements from all items of type ClCompile
+        ExtractIncludesFromItem:	Verbose  : Extracting include elements from all items of type MessageCompile
+        ExtractIncludesFromItem:	Verbose  : Didn't find any items of type MessageCompile in project C:\Users\fred\Desktop\usbpcap\dirs-Package\dirs-Package.vcxproj
+        ExtractIncludesFromItem:	Verbose  : Extracting include elements from all items of type Midl
+        ExtractIncludesFromItem:	Verbose  : Didn't find any items of type Midl in project C:\Users\fred\Desktop\usbpcap\dirs-Package\dirs-Package.vcxproj
+        ExtractIncludesFromItem:	Verbose  : Extracting include elements from all items of type ResourceCompile
+        ExtractIncludesFromItem:	Verbose  : Didn't find any items of type ResourceCompile in project C:\Users\fred\Desktop\usbpcap\dirs-Package\dirs-Package.vcxproj
+        ExtractIncludesFromItemMetadata:	Verbose  : Extracting include elements from metadata AdditionalDependencies on item type Link, using splitter ;
+        ExtractIncludesFromItemMetadata:	Verbose  : Extracting include elements from metadata AdditionalIncludeDirectories on item type ClCompile, using splitter ;
+            FindPreReqProjectsInReferences:	Verbose  : Ignoring following path since it references the project's own $(O) C:\Users\fred\Desktop\usbpcap\dirs-Package\83126380-c824-4083-8ac8-5e5f111c6b76
+        GetPrerequisiteProjects           :	Verbose  : No prerequisite projects found for project C:\Users\fred\Desktop\usbpcap\dirs-Package\dirs-Package.vcxproj
+    AddPrerequisitesToSolution            :	Verbose  : Project C:\Users\fred\Desktop\usbpcap\dirs-Package\dirs-Package.vcxproj had no prerequisites, adding to solution
+    AddPrerequisitesToSolution            :	Verbose  : Finding prerequisites for C:\Users\fred\Desktop\usbpcap\USBPcapDriver\USBPcap.vcxproj
+        GetPrerequisiteProjects           :	Verbose  : Satisfying dependency check for C:\Users\fred\Desktop\usbpcap\USBPcapDriver\USBPcap.vcxproj using cached data
+    AddPrerequisitesToSolution            :	Verbose  : Project C:\Users\fred\Desktop\usbpcap\USBPcapDriver\USBPcap.vcxproj had no prerequisites, adding to solution
+    AddPrerequisitesToSolution            :	Verbose  : Finding prerequisites for C:\Users\fred\Desktop\usbpcap\USBPcapCMD\USBPcapCMD.vcxproj
+        GetPrerequisiteProjects           :	Verbose  : Satisfying dependency check for C:\Users\fred\Desktop\usbpcap\USBPcapCMD\USBPcapCMD.vcxproj using cached data
+    AddPrerequisitesToSolution            :	Verbose  : Project C:\Users\fred\Desktop\usbpcap\USBPcapCMD\USBPcapCMD.vcxproj had no prerequisites, adding to solution
+GetDependencyInformation                  :	Information  : The primary project collection does not contain any projects that depend on others.
+CreateSolutionIncludingDependencies:	Verbose  : Attempting to generate solution file C:\Users\fred\Desktop\usbpcap\dirs.sln from projects list
+        InitializeProjectsForSolution:	Information  : Generating solution C:\Users\fred\Desktop\usbpcap\dirs.sln from:
+                                                      	    C:\Users\fred\Desktop\usbpcap\dirs-Package\dirs-Package.vcxproj
+                                                      	    C:\Users\fred\Desktop\usbpcap\USBPcapDriver\USBPcap.vcxproj
+                                                      	    C:\Users\fred\Desktop\usbpcap\USBPcapCMD\USBPcapCMD.vcxproj
+        ExtractProjectGuid           :	Verbose  :  GUID {24F972AE-9482-414A-A97B-A745C93E1774} was extracted from project C:\Users\fred\Desktop\usbpcap\dirs-Package\dirs-Package.vcxproj
+        ExtractProjectGuid           :	Verbose  :  GUID {AE7DA202-4E32-4C16-9DB9-D9BF0D10EA73} was extracted from project C:\Users\fred\Desktop\usbpcap\USBPcapDriver\USBPcap.vcxproj
+        ExtractProjectGuid           :	Verbose  :  GUID {B28BC6E7-7A34-4C89-83DE-C8AFAF5DAC5D} was extracted from project C:\Users\fred\Desktop\usbpcap\USBPcapCMD\USBPcapCMD.vcxproj
+        InitializeProjectsForSolution:	Verbose  : Project C:\Users\fred\Desktop\usbpcap\dirs-Package\dirs-Package.vcxproj does not depend on others
+        InitializeProjectsForSolution:	Verbose  : Project C:\Users\fred\Desktop\usbpcap\USBPcapDriver\USBPcap.vcxproj does not depend on others
+        InitializeProjectsForSolution:	Verbose  : Project C:\Users\fred\Desktop\usbpcap\USBPcapCMD\USBPcapCMD.vcxproj does not depend on others
+        WriteProjectEntries          :	Verbose  : Added project dirs-Package to solution with a GUID of {24F972AE-9482-414A-A97B-A745C93E1774}
+        WriteProjectEntries          :	Verbose  : Added project USBPcap to solution with a GUID of {AE7DA202-4E32-4C16-9DB9-D9BF0D10EA73}
+        WriteProjectEntries          :	Verbose  : Added project USBPcapCMD to solution with a GUID of {B28BC6E7-7A34-4C89-83DE-C8AFAF5DAC5D}
+    WriteProjectConfigurations       :	Verbose  : Writing project configurations for C:\Users\fred\Desktop\usbpcap\dirs-Package\dirs-Package.vcxproj
+    WriteProjectConfigurations       :	Verbose  : Writing project configurations for C:\Users\fred\Desktop\usbpcap\USBPcapDriver\USBPcap.vcxproj
+    WriteProjectConfigurations       :	Verbose  : Writing project configurations for C:\Users\fred\Desktop\usbpcap\USBPcapCMD\USBPcapCMD.vcxproj
+CreateSolutionIncludingDependencies  :	Information  : Solution C:\Users\fred\Desktop\usbpcap\dirs.sln was created successfully
+Convert                              :	Information  : ========== Conversion Finished: 1 Solutions and 3 Projects created ==========
+Convert                              :	Verbose  : 6/29/2020 3:21:24 PM
